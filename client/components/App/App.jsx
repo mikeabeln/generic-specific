@@ -22,9 +22,11 @@ class App extends React.Component {
 
     render() {
         return (
-            <div className='appContainer'>
-                <Header />
-                <main className='main'>{this.props.children}</main>
+            <div className='appContainer containerFluid'>
+                <Header path={this.state.path} />
+                <main className='main' path={this.state.path}>
+                    {this.props.children}
+                </main>
                 <Footer />
             </div>
         )

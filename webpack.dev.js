@@ -1,4 +1,3 @@
-const webpack = require('webpack')
 const merge = require('webpack-merge')
 const common = require('./webpack.config.js')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
@@ -35,16 +34,22 @@ module.exports = merge(common, {
             {
                 // bundle css+scss files to extracted css files for development
                 test: /\.(css|scss)$/,
-                use: ['css-hot-loader'].concat(ExtractTextPlugin.extract(
-                    {
+                use: ['css-hot-loader'].concat(
+                    ExtractTextPlugin.extract({
                         fallback: 'style-loader',
                         use: [
-                            { loader: 'css-loader', options: { sourceMap: true } },
+                            {
+                                loader: 'css-loader',
+                                options: { sourceMap: true }
+                            },
                             { loader: 'postcss-loader' },
-                            { loader: 'sass-loader', options: { sourceMap: true } }
+                            {
+                                loader: 'sass-loader',
+                                options: { sourceMap: true }
+                            }
                         ]
-                    }
-                ))
+                    })
+                )
             }
         ]
     },
@@ -53,7 +58,6 @@ module.exports = merge(common, {
             filename: './app.bundle.css',
             disable: false,
             allChunks: true
-        }),
-        new webpack.HotModuleReplacementPlugin()
+        })
     ]
 })

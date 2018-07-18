@@ -1,3 +1,33 @@
-.header{
-	font-weight: 400;
+.header {
+    font-weight: 400;
+}
+
+.header_logo {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 800;
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+
+.header_links_cont {
+    display: flex;
+    flex: 100;
+}
+
+.header_links {
+    width: 100%;
+    text-align: right;
+    padding: 0px;
+}
+
+.header_link {
+    display: inline-block;
+}
+
+.header_link:not(:first-child) {
+    padding-left: 2.4rem;
+}
+
+.header_link_active {
+    color: black;
 }
