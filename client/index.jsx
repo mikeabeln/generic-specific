@@ -8,7 +8,7 @@ import './index.scss'
 import Routes from './routes.jsx'
 
 export const renderApp = () => {
-    ReactDOM.render((<Routes/>), document.getElementById('root'))
+    ReactDOM.render(<Routes />, document.getElementById('root'))
 }
 
 renderApp()
