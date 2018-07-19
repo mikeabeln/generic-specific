@@ -5,29 +5,47 @@
 .header_logo {
     font-family: 'Roboto Mono', monospace;
     font-weight: 800;
-    font-size: 1.2rem;
-    line-height: 2rem;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    height: 100%;
+    margin: 1rem 0rem;
 }
 
-.header_links_cont {
-    display: flex;
-    flex: 100;
+.header_links-cont {
+    height: 100%;
+    margin-top: 0.6rem;
 }
 
-.header_links {
+.header_link-list {
     width: 100%;
     text-align: right;
     padding: 0px;
 }
 
-.header_link {
+.header_link-item {
+    font-family: 'Roboto Mono', monospace;
     display: inline-block;
+    color: #414142;
+    font-weight: 400;
 }
 
-.header_link:not(:first-child) {
-    padding-left: 2.4rem;
+.header_link-item:not(:first-child) {
+    margin-left: 2.4rem;
 }
 
-.header_link_active {
+a.header_link {
     color: black;
+    &:hover {
+        text-decoration: none;
+        border-bottom: 2px solid black;
+    }
+}
+
+a.header_link-active {
+    color: black;
+    border-bottom: 2px solid #fec10d;
+    &:hover {
+        text-decoration: none;
+        border-bottom: 2px solid #fec10d;
+    }
 }

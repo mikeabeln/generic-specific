@@ -18,30 +18,34 @@ class Header extends React.Component {
 
     render() {
         return (
-            <header className='header row'>
+            <header className='header containerFluid'>
                 {/* put header content here */}
-                <span className='header_logo colXs1'>Generic Specific</span>
-                <span className='header_links_cont'>
-                    <ul className='header_links'>
-                        <li className='header_link'>
-                            <NavLink
-                                exact
-                                to='/'
-                                activeClassName='header_link_active'
-                            >
-                                Home
-                            </NavLink>
-                        </li>
-                        <li className='header_link'>
-                            <NavLink
-                                to='/about'
-                                activeClassName='header_link_active'
-                            >
-                                About
-                            </NavLink>
-                        </li>
-                    </ul>
-                </span>
+                <div className='row'>
+                    <span className='header_logo colXs1'>Generic Specific</span>
+                    <span className='header_links-cont colXs11'>
+                        <ul className='header_link-list'>
+                            <li className='header_link-item'>
+                                <NavLink
+                                    exact
+                                    to='/'
+                                    className='header_link'
+                                    activeClassName='header_link-active'
+                                >
+                                    Home
+                                </NavLink>
+                            </li>
+                            <li className='header_link-item'>
+                                <NavLink
+                                    to='/about'
+                                    className='header_link'
+                                    activeClassName='header_link-active'
+                                >
+                                    About
+                                </NavLink>
+                            </li>
+                        </ul>
+                    </span>
+                </div>
             </header>
         )
     }

@@ -22,7 +22,7 @@ class App extends React.Component {
 
     render() {
         return (
-            <div className='appContainer containerFluid'>
+            <div className='appContainer'>
                 <Header path={this.state.path} />
                 <main className='main' path={this.state.path}>
                     {this.props.children}

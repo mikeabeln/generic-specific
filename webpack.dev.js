@@ -8,7 +8,7 @@ module.exports = merge(common, {
     devServer: {
         contentBase: './server/dist',
         hot: true,
-        progress: true,
+        progress: false,
         historyApiFallback: true,
         stats: 'errors-only',
         useLocalIp: true,
@@ -17,7 +17,7 @@ module.exports = merge(common, {
         disableHostCheck: true,
         proxy: {
             '/api/**': {
-                quiet: false,
+                quiet: true,
                 noInfo: false,
                 logLevel: 'debug',
                 changeOrigin: false,
