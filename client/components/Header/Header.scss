@@ -4,7 +4,7 @@
 
 .header_logo {
     font-family: 'Roboto Mono', monospace;
-    font-weight: 800;
+    font-weight: 700;
     font-size: 1.4rem;
     line-height: 1.8rem;
     height: 100%;
@@ -36,7 +36,7 @@
 a.header_link {
     color: black;
     &:hover {
-        font-weight: 600;
+        font-weight: 700;
         text-decoration: none;
         border-bottom: 2px solid black;
     }
@@ -44,7 +44,7 @@ a.header_link {
 
 a.header_link-active {
     color: black;
-    font-weight: 600;
+    font-weight: 700;
     border-bottom: 2px solid #fec10d;
     &:hover {
         text-decoration: none;

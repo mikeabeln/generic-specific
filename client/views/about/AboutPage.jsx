@@ -4,7 +4,6 @@ import axios from 'axios'
 import './AboutPage.scss'
 
 class AboutPage extends React.Component {
-
     constructor(props) {
         super(props)
         this.state = {
@@ -13,12 +12,16 @@ class AboutPage extends React.Component {
     }
 
     componentDidMount() {
-        axios.get('/api/test/about').then((response) => {
-            console.log('requesting api/test/about', response)
-            this.setState({ data: response.data.msg })
-        }).catch((error) => {
-            console.log(error)
-        })
+        console.log(this.state)
+        axios
+            .get('/api/test/about')
+            .then(response => {
+                console.log('requesting api/test/about', response)
+                this.setState({ data: response.data.msg })
+            })
+            .catch(error => {
+                console.log(error)
+            })
     }
 
     render() {
