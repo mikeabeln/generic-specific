@@ -17,7 +17,7 @@ a {
     text-decoration: none;
     color: $gray900;
     &:hover {
-        color: $gray900 !important;
+        color: $gray900;
         text-decoration: underline;
     }
     &:visited {
