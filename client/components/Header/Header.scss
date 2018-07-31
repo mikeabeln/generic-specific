@@ -32,8 +32,8 @@ a.header_logo {
 .header_link-list {
     width: 100%;
     text-align: right;
-    padding: 0px;
-    margin: 10px 0 0;
+    padding: 0;
+    margin: 1rem 0 0;
 }
 
 .header_list-item {
@@ -50,7 +50,7 @@ a.header_logo {
     margin-left: 1.2rem;
     &:hover{
       background-color: $gray200;
-      border-radius: 100px;
+      border-radius: 100rem;
     }
 }
 
@@ -59,20 +59,32 @@ a.header_link {
     font-weight: 300;
     font-size: 1.2rem;
     line-height: 1.6rem;
+    padding: 0 0.4rem;
     &:hover {
         font-weight: 700;
         text-decoration: none;
-        border-bottom: 2px solid black;
+        border-bottom: 0.2rem solid black;
+    }
+    &:focus {
+      outline: none;
+      font-weight: 700;
+      text-decoration: none;
+      border-bottom: 0.2rem solid black;
     }
 }
 
 a.header_link-active {
     color: black;
     font-weight: 700;
-    border-bottom: 2px solid #fec10d;
+    border-bottom: 0.2rem solid #fec10d;
     &:hover {
         text-decoration: none;
-        border-bottom: 2px solid #fec10d;
+    }
+    &:focus {
+      outline: none;
+      font-weight: 700;
+      text-decoration: none;
+      border-bottom: 0.2rem solid black;
     }
 }
 
@@ -84,7 +96,7 @@ a.header_link-active {
 
 .header_more-button{
     background-color: rgba($gray100, 0);
-    border: 0px solid transparent;
+    border: 0 solid transparent;
     width: 2.4rem;
     cursor: pointer;
     transition: 0.25s;
@@ -97,6 +109,9 @@ a.header_link-active {
     &:focus{
       background-color: $gray100;
       outline: none;
-      box-shadow: 0px 0px 4px 2px $blue300;
+      box-shadow: 0px 0px 4px 2px $gray900;
+    }
+    &:hover:focus{
+      background-color: $gray200;
     }
 }

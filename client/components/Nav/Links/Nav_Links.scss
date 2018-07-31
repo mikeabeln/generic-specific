@@ -33,17 +33,52 @@
 }
 
 a.nav_set-link{
-    font-family: 'Roboto';
+    font-family: 'Roboto Mono';
     font-size: 1.2rem;
     font-weight: 100;
     line-height: 2.2rem;
-    letter-spacing: 0.15rem;
+    letter-spacing: 0rem;
     padding-bottom: 0.2rem;
     color: $gray300;
+
+    &:hover{
+      font-weight: 400;
+      color: $yellow500;
+      text-decoration: none;
+      border-bottom: 1px solid $yellow500
+    }
+
+    &:focus{
+      outline: none;
+      color: white;
+      font-weight: 400;
+      border-bottom: 1px solid white;
+    }
+
+    &:hover:focus{
+      font-weight: 400;
+      color: $yellow500;
+      text-decoration: none;
+      border-bottom: 1px solid $yellow500
+    }
 }
 
 a.nav_set-link-active{
   color: $yellow500;
   font-weight: 400;
-  border-bottom: 1px solid $yellow500
+  border-bottom: 1px solid $yellow500;
+
+  &:hover{
+      outline: none;
+      color: white;
+      font-weight: 400;
+      border-bottom: 1px solid white;
+  }
+
+  &:hover:focus{
+      outline: none;
+      color: $yellow500;
+      font-weight: 400;
+      border-bottom: 1px solid $yellow500;
+  }
 }

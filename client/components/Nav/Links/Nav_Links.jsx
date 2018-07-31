@@ -6,7 +6,11 @@ import NavLinksData from './Links.json'
 class Nav_Links extends React.Component {
     constructor(props) {
         super(props)
-        this.toggleNav = this.props.toggleNav.bind(this)
+        this.delayToggleNav = this.delayToggleNav.bind(this)
+    }
+
+    delayToggleNav() {
+        setTimeout(() => this.props.toggleNav(), 100)
     }
 
     render() {
@@ -21,7 +25,7 @@ class Nav_Links extends React.Component {
                                     <NavLink
                                         exact={true}
                                         to={'/' + set.links[i].link}
-                                        onClick={this.props.toggleNav}
+                                        onClick={this.delayToggleNav}
                                         className='nav_set-link'
                                         activeClassName='nav_set-link-active'
                                     >

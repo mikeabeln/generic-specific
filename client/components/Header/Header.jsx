@@ -7,9 +7,6 @@ class Header extends React.Component {
     constructor(props) {
         super(props)
         this.state = {}
-
-        this.toggleNav = this.props.toggleNav.bind(this)
-        this.closeNav = this.props.closeNav.bind(this)
     }
 
     componentDidMount() {
@@ -37,7 +34,7 @@ class Header extends React.Component {
                                     <NavLink
                                         exact={link.exact}
                                         to={link.link}
-                                        onClick={this.closeNav}
+                                        onClick={this.props.closeNav}
                                         className='header_link'
                                         activeClassName='header_link-active'
                                     >
@@ -48,7 +45,7 @@ class Header extends React.Component {
                             <li className='header_list-item'>
                                 <button
                                     className={'header_more-button'}
-                                    onClick={this.toggleNav}
+                                    onClick={this.props.toggleNav}
                                     aria-expanded={this.props.navOpen}
                                     aria-haspopup={true }
                                     aria-label='More Navigation Links'
