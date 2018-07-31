@@ -5,31 +5,31 @@
       "links": [
         {
           "name": "Project 1",
-          "link": "ideas/Project 1"
+          "link": "ideas/project1"
         },
         {
           "name": "Project 2",
-          "link": "ideas/Project 2"
+          "link": "ideas/project2"
         },
         {
           "name": "Project 3",
-          "link": "ideas/Project 3"
+          "link": "ideas/project3"
         },
         {
           "name": "Project 4",
-          "link": "ideas/Project 4"
+          "link": "ideas/project4"
         },
         {
           "name": "Project 5",
-          "link": "ideas/Project 5"
+          "link": "ideas/project5"
         },
         {
           "name": "Project 6",
-          "link": "ideas/Project 6"
+          "link": "ideas/project6"
         },
         {
           "name": "Project 7",
-          "link": "ideas/Project 7"
+          "link": "ideas/project7"
         }
       ]
     },
@@ -38,31 +38,31 @@
       "links": [
         {
           "name": "Project 1",
-          "link": "services/Project 1"
+          "link": "services/project1"
         },
         {
           "name": "Project 2",
-          "link": "services/Project 2"
+          "link": "services/project2"
         },
         {
           "name": "Project 3",
-          "link": "services/Project 3"
+          "link": "services/project3"
         },
         {
           "name": "Project 4",
-          "link": "services/Project 4"
+          "link": "services/project4"
         },
         {
           "name": "Project 5",
-          "link": "services/Project 5"
+          "link": "services/project5"
         },
         {
           "name": "Project 6",
-          "link": "services/Project 6"
+          "link": "services/project6"
         },
         {
           "name": "Project 7",
-          "link": "services/Project 7"
+          "link": "services/project7"
         }
       ]
     },
@@ -71,31 +71,31 @@
       "links": [
         {
           "name": "Project 1",
-          "link": "products/Project 1"
+          "link": "products/project1"
         },
         {
           "name": "Project 2",
-          "link": "products/Project 2"
+          "link": "products/project2"
         },
         {
           "name": "Project 3",
-          "link": "products/Project 3"
+          "link": "products/project3"
         },
         {
           "name": "Project 4",
-          "link": "products/Project 4"
+          "link": "products/project4"
         },
         {
           "name": "Project 5",
-          "link": "products/Project 5"
+          "link": "products/project5"
         },
         {
           "name": "Project 6",
-          "link": "products/Project 6"
+          "link": "products/project6"
         },
         {
           "name": "Project 7",
-          "link": "products/Project 7"
+          "link": "products/project7"
         }
       ]
     }

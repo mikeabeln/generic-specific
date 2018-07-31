@@ -10,10 +10,12 @@
 
 .nav_open{
 	visibility: visible;
+	opacity: 1;
 	background-color: rgba($gray900, 0.95);
 }
 
 .nav_closed{
 	visibility: hidden;
-	background-color: rgba($gray900, 0);
+	opacity: 0;
+	background-color: rgba($gray900, 0.95);
 }

@@ -14,13 +14,13 @@ class Nav_Links extends React.Component {
                 { NavLinksData.sets.map((set, index) => (
                     <div key={index}>
                         <h4 className='nav_section'>{set.title}</h4>
-                        { set.links.map((links, key) => (
-                            <li key={set.links[key]}>
+                        { set.links.map((links, i) => (
+                            <li key={i}>
                                 <NavLink
                                     exact={true}
-                                    to={'/' + set.links[key].link}
+                                    to={'/' + set.links[i].link}
                                     className='nav_link'
-                                    activeClassName='nav_link-active'>{set.links[key].name}
+                                    activeClassName='nav_link-active'>{set.links[i].name}
                                 </NavLink>
                             </li>
                         ))}

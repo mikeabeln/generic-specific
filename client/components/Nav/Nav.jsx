@@ -3,7 +3,7 @@ import './Nav.scss'
 
 import Nav_Links from './Links/Nav_Links.jsx'
 
-class Footer extends React.Component {
+class Nav extends React.Component {
 
     constructor(props) {
         super(props)
@@ -20,4 +20,4 @@ class Footer extends React.Component {
     }
 }
 
-export default Footer
+export default Nav
