@@ -25,17 +25,22 @@ class App extends React.Component {
         })
 
         this.toggleNav = this.toggleNav.bind(this)
+        this.closeNav = this.closeNav.bind(this)
     }
 
     toggleNav() {
         this.setState({ navOpen: !this.state.navOpen })
     }
 
+    closeNav() {
+        this.setState({ navOpen: false })
+    }
+
     render() {
         return (
             <div className='appContainer'>
-                <Header path={this.state.path} links={data.links} toggleNav={this.toggleNav}/>
-                <Nav open={this.state.navOpen} />
+                <Header path={this.state.path} links={data.links} navOpen={this.state.navOpen} closeNav={this.closeNav} toggleNav={this.toggleNav}/>
+                <Nav open={this.state.navOpen} toggleNav={this.toggleNav}/>
                 <main className='main' path={this.state.path}>
                     {this.props.children}
                 </main>

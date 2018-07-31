@@ -7,6 +7,7 @@ module.exports = {
         app: './client/index.jsx'
     },
     output: {
+        publicPath: '/',
         filename: '[name].bundle.[hash].js',
         path: path.resolve(__dirname, 'server/public')
     },

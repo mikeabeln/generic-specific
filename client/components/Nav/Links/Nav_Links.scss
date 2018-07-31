@@ -1,0 +1,49 @@
+@import './../../../styles/_color.scss';
+
+.nav_links-cont{
+    padding-top: 4rem;
+}
+
+.nav_set-cont{
+  margin-top: 5.6rem;
+}
+
+.nav_set-title{
+    font-family: 'Roboto Mono';
+    font-size: 1.4rem;
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+    color: white;
+    margin: 0;
+    padding-bottom: 0.4rem;
+    border-bottom: 1px solid $gray700;
+}
+
+.nav_set-list{
+    column-count: 3;
+    list-style: none;
+    padding: 0;
+}
+
+.nav_set-list-item{
+}
+
+.nav_set-list-item:not(:first-child){
+  margin-top: 1.2rem;
+}
+
+a.nav_set-link{
+    font-family: 'Roboto';
+    font-size: 1.2rem;
+    font-weight: 100;
+    line-height: 2.2rem;
+    letter-spacing: 0.15rem;
+    padding-bottom: 0.2rem;
+    color: $gray300;
+}
+
+a.nav_set-link-active{
+  color: $yellow500;
+  font-weight: 400;
+  border-bottom: 1px solid $yellow500
+}

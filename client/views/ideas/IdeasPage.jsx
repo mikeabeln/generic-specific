@@ -1,9 +1,8 @@
 import * as React from 'react'
 import { Link } from 'react-router-dom'
-import axios from 'axios'
-import './AboutPage.scss'
+import './IdeasPage.scss'
 
-class AboutPage extends React.Component {
+class IdeasPage extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
@@ -12,23 +11,14 @@ class AboutPage extends React.Component {
     }
 
     componentDidMount() {
-        console.log(this.props)
-        axios
-            .get('/api/test/about')
-            .then(response => {
-                console.log('requesting api/test/about', response)
-                this.setState({ data: response.data.msg })
-            })
-            .catch(error => {
-                console.log(error)
-            })
+        console.log(this.props.match)
     }
 
     render() {
         return (
             <div className='Landing_Container'>
                 {/* put landing page content here */}
-                <p className='paragraph'>About Page</p>
+                <p className='paragraph'>Ideas Page</p>
                 <Link to='/test'>Test</Link>
                 <Link to='/'>Landing</Link>
                 <p>{this.state.data}</p>
@@ -37,4 +27,4 @@ class AboutPage extends React.Component {
     }
 }
 
-export default AboutPage
+export default IdeasPage

@@ -9,6 +9,7 @@ class Header extends React.Component {
         this.state = {}
 
         this.toggleNav = this.props.toggleNav.bind(this)
+        this.closeNav = this.props.closeNav.bind(this)
     }
 
     componentDidMount() {
@@ -24,16 +25,34 @@ class Header extends React.Component {
             <header className='header containerFluid'>
                 {/* put header content here */}
                 <div className='row'>
-                    <span className='colXs1 header_logo-cont'><Link className='header_logo' to='/'>Generic Specific</Link></span>
+                    <span className='colXs1 header_logo-cont'>
+                        <Link className='header_logo' to='/'>
+                            Generic Specific
+                        </Link>
+                    </span>
                     <span className='header_links-cont colXs11'>
                         <ul className='header_link-list'>
                             {this.props.links.map((link, index) => (
                                 <li key={index} className='header_list-item'>
-                                    <NavLink exact={link.exact} to={link.link} className='header_link' activeClassName='header_link-active'>{link.name}</NavLink>
+                                    <NavLink
+                                        exact={link.exact}
+                                        to={link.link}
+                                        onClick={this.closeNav}
+                                        className='header_link'
+                                        activeClassName='header_link-active'
+                                    >
+                                        {link.name}
+                                    </NavLink>
                                 </li>
                             ))}
                             <li className='header_list-item'>
-                                <button className={'header_more-button'} onClick={this.toggleNav} aria-haspopup='true' title='Menu'>
+                                <button
+                                    className={'header_more-button'}
+                                    onClick={this.toggleNav}
+                                    aria-expanded={this.props.navOpen}
+                                    aria-haspopup={true }
+                                    aria-label='More Navigation Links'
+                                >
                                     <img className='header_more-icon' src={moreIcon} />
                                 </button>
                             </li>

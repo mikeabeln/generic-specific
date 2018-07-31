@@ -13,7 +13,7 @@ class Nav extends React.Component {
     render() {
         return (
             <nav className={'nav ' + (this.props.open ? 'nav_open' : 'nav_closed')}>
-                <Nav_Links className={'nav_links'} />
+                <Nav_Links className={'nav_links'} toggleNav={this.props.toggleNav}/>
                 <section className={'nav_intro'} />
             </nav>
         )
