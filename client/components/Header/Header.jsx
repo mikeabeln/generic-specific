@@ -1,11 +1,14 @@
 import * as React from 'react'
-import { NavLink } from 'react-router-dom'
+import { NavLink, Link } from 'react-router-dom'
 import './Header.scss'
+import moreIcon from './more.svg'
 
 class Header extends React.Component {
     constructor(props) {
         super(props)
         this.state = {}
+
+        this.toggleNav = this.props.toggleNav.bind(this)
     }
 
     componentDidMount() {
@@ -21,27 +24,18 @@ class Header extends React.Component {
             <header className='header containerFluid'>
                 {/* put header content here */}
                 <div className='row'>
-                    <span className='header_logo colXs1'>Generic Specific</span>
+                    <span className='colXs1 header_logo-cont'><Link className='header_logo' to='/'>Generic Specific</Link></span>
                     <span className='header_links-cont colXs11'>
                         <ul className='header_link-list'>
-                            <li className='header_link-item'>
-                                <NavLink
-                                    exact
-                                    to='/'
-                                    className='header_link'
-                                    activeClassName='header_link-active'
-                                >
-                                    Home
-                                </NavLink>
-                            </li>
-                            <li className='header_link-item'>
-                                <NavLink
-                                    to='/about'
-                                    className='header_link'
-                                    activeClassName='header_link-active'
-                                >
-                                    About
-                                </NavLink>
+                            {this.props.links.map((link, index) => (
+                                <li key={index} className='header_list-item'>
+                                    <NavLink exact={link.exact} to={link.link} className='header_link' activeClassName='header_link-active'>{link.name}</NavLink>
+                                </li>
+                            ))}
+                            <li className='header_list-item'>
+                                <button className={'header_more-button'} onClick={this.toggleNav} aria-haspopup='true' title='Menu'>
+                                    <img className='header_more-icon' src={moreIcon} />
+                                </button>
                             </li>
                         </ul>
                     </span>

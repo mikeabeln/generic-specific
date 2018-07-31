@@ -15,9 +15,9 @@
     "private": true,
     "scripts": {
         "lint": "eslint --ignore-path .gitignore client/**.jsx",
-        "dev": "yarn lint && webpack-dev-server --open --hot --config webpack.dev.js",
+        "dev": "yarn lint && webpack-dev-server --progress --open --hot --config webpack.dev.js",
         "prebuild": "rimraf server/public && yarn lint",
-        "build": "webpack --progress --config webpack.dist.js",
+        "build": "webpack --config webpack.dist.js",
         "deploy": "cd server && firebase deploy && cd .."
     },
     "devDependencies": {
@@ -40,9 +40,11 @@
         "extract-text-webpack-plugin": "^4.0.0-beta.0",
         "file-loader": "^1.1.11",
         "html-webpack-plugin": "^3.2.0",
+        "hoek": "^4.2.1",
         "mini-css-extract-plugin": "^0.4.1",
         "node-sass": "^4.9.0",
         "normalize.css": "^8.0.0",
+        "postcss-hexrgba": "^1.0.1",
         "postcss-loader": "^2.1.6",
         "rimraf": "^2.6.2",
         "sass-loader": "^7.0.2",
@@ -55,7 +57,6 @@
     },
     "dependencies": {
         "axios": "^0.18.0",
-        "hoek": "^4.2.1",
         "react": "^16.4.0",
         "react-dom": "^16.4.0",
         "react-hot-loader": "^4.2.0",

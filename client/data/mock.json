@@ -1,0 +1,24 @@
+{
+  "links": [
+    {
+      "name": "Ideas",
+      "link": "/ideas",
+      "exact": false
+    },
+    {
+      "name": "Services",
+      "link": "/services",
+      "exact": false
+    },
+    {
+      "name": "Products",
+      "link": "/products",
+      "exact": false
+    },
+    {
+      "name": "About",
+      "link": "/about",
+      "exact": false
+    }
+  ]
+}

@@ -12,7 +12,6 @@ class AboutPage extends React.Component {
     }
 
     componentDidMount() {
-        console.log(this.state)
         axios
             .get('/api/test/about')
             .then(response => {

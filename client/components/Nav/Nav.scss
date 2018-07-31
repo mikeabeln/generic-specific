@@ -1,0 +1,19 @@
+@import '../../styles/_color.scss';
+
+.nav{
+	position: absolute;
+	width: 100%;
+	height: calc(100% - 5.6rem);
+	z-index: 50;
+	transition: 0.4s;
+}
+
+.nav_open{
+	visibility: visible;
+	background-color: rgba($gray900, 0.95);
+}
+
+.nav_closed{
+	visibility: hidden;
+	background-color: rgba($gray900, 0);
+}

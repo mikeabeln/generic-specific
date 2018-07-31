@@ -1,14 +1,27 @@
+@import '../../styles/_color.scss';
+
 .header {
     font-weight: 400;
 }
 
-.header_logo {
+.header_logo-cont{
+    margin: 1.2rem 0rem;
+}
+
+a.header_logo {
     font-family: 'Roboto Mono', monospace;
     font-weight: 700;
-    font-size: 1.4rem;
-    line-height: 1.8rem;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
     height: 100%;
-    margin: 1rem 0rem;
+    color: black;
+
+    &:hover{
+      cursor: pointer;
+      text-decoration: none;
+    }
 }
 
 .header_links-cont {
@@ -20,21 +33,32 @@
     width: 100%;
     text-align: right;
     padding: 0px;
+    margin: 10px 0 0;
 }
 
-.header_link-item {
+.header_list-item {
     font-family: 'Roboto Mono', monospace;
     display: inline-block;
     color: #414142;
-    font-weight: 400;
 }
 
-.header_link-item:not(:first-child) {
-    margin-left: 2.4rem;
+.header_list-item:not(:first-child) {
+    margin-left: 3.2rem;
+}
+
+.header_list-item:last-child {
+    margin-left: 1.2rem;
+    &:hover{
+      background-color: $gray100;
+      border-radius: 100px;
+    }
 }
 
 a.header_link {
     color: black;
+    font-weight: 300;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
     &:hover {
         font-weight: 700;
         text-decoration: none;
@@ -49,5 +73,25 @@ a.header_link-active {
     &:hover {
         text-decoration: none;
         border-bottom: 2px solid #fec10d;
+    }
+}
+
+.header_more-icon{
+    vertical-align: middle;
+    color: $gray600;
+    cursor: pointer;
+}
+
+.header_more-button{
+    background-color: rgba($gray100, 0);
+    border: 0px solid transparent;
+    width: 2.4rem;
+    cursor: pointer;
+    transition: 0.25s;
+    padding: 0;
+    border-radius: 100%;
+
+    &:hover{
+      background-color: $gray100
     }
 }

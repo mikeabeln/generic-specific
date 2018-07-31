@@ -20,7 +20,11 @@ export default () => {
                     <Route path='/' exact component={LandingPage} />
 
                     {/* Views Routes */}
+                    <Route path='/ideas' exact component={LandingPage} />
+                    <Route path='/services' exact component={LandingPage} />
+                    <Route path='/products' exact component={LandingPage} />
                     <Route path='/about' exact component={AboutPage} />
+
                     <Route path='/login' exact component={LoginPage} />
                     <Route path='/signup' exact component={SignupPage} />
 

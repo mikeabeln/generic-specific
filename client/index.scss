@@ -5,22 +5,28 @@
 // Set REM to 10px
 html {
     font-size: 62.5%;
+    height: 100%;
 }
 
 body {
+    height: inherit;
     width: 100%;
     overflow-x: hidden;
+    overflow-y: scroll;
     background-color: $gray50;
 }
 
 a {
     text-decoration: none;
-    color: $gray900;
+    color: $gray600;
     &:hover {
         color: $gray900;
         text-decoration: underline;
     }
     &:visited {
         color: $gray600;
+    }
+    &:hover:visited{
+      color: $gray900;
     }
 }
