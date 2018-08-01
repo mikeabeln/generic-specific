@@ -9,6 +9,7 @@ import LoginPage from './views/login/LoginPage.jsx'
 import SignupPage from './views/signup/SignupPage.jsx'
 
 import IdeasPage from './views/ideas/IdeasPage.jsx'
+import IdeasProject from './views/ideas/project/IdeasProject.jsx'
 
 import Error404 from './views/error404/Error404.jsx'
 
@@ -23,7 +24,7 @@ export default () => {
 
                     {/* Views Routes */}
                     <Route path='/ideas' exact component={IdeasPage} />
-                    <Route path='/ideas/:idea' component={IdeasPage} />
+                    <Route path='/ideas/:idea' component={IdeasProject} />
                     <Route path='/services' exact component={LandingPage} />
                     <Route path='/products' exact component={LandingPage} />
                     <Route path='/about' exact component={AboutPage} />

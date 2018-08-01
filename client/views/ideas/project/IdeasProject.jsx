@@ -10,16 +10,16 @@ class IdeasProject extends React.Component {
     }
 
     componentDidMount() {
-        console.log(this.props)
+        console.log(this.props.match.params.idea)
+    }
 
+    componentDidUpdate(prevProps) {
+        console.log(prevProps.match.params.idea, this.props.match.params.idea)
     }
 
     render() {
         return (
-            <div className='Landing_Container'>
-                {/* put landing page content here */}
-                <p className='paragraph'>Ideas Project</p>
-            </div>
+            <p className='paragraph'>Ideas Project</p>
         )
     }
 }

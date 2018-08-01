@@ -13,9 +13,9 @@ class Header extends React.Component {
         console.log(this.props)
     }
 
-    componentDidUpdate(prevProps) {
-        console.log(prevProps, this.props)
-    }
+    // componentDidUpdate(prevProps) {
+    //     console.log(prevProps, this.props)
+    // }
 
     render() {
         return (
