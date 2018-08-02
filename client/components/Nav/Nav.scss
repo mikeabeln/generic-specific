@@ -3,7 +3,7 @@
 .nav{
 	position: absolute;
 	width: 100%;
-	height: calc(100% - 5.6rem);
+	min-height: 100%;
 	z-index: 50;
 	transition: 0.4s;
 }
@@ -18,4 +18,8 @@
 	visibility: hidden;
 	opacity: 0;
 	background-color: rgba($gray900, 0.95);
+}
+
+.nav_sections-cont{
+	height: 100%;
 }
