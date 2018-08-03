@@ -23,7 +23,7 @@ class Header extends React.Component {
                 {/* put header content here */}
                 <div className='row'>
                     <span className='colXs1 header_logo-cont'>
-                        <Link className='header_logo' to='/'>
+                        <Link className='header_logo' to='/' onClick={this.props.closeNav}>
                             Generic Specific
                         </Link>
                     </span>
