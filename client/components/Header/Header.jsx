@@ -1,7 +1,8 @@
 import * as React from 'react'
-import { NavLink, Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import './Header.scss'
 import moreIcon from './more.svg'
+// import menuIcon from './menu.svg'
 
 class Header extends React.Component {
     constructor(props) {
@@ -22,12 +23,16 @@ class Header extends React.Component {
             <header className='header containerFluid'>
                 {/* put header content here */}
                 <div className='row'>
-                    <span className='colXs1 header_logo-cont'>
-                        <Link className='header_logo' to='/' onClick={this.props.closeNav}>
-                            Generic Specific
-                        </Link>
-                    </span>
-                    <span className='header_links-cont colXs11'>
+                    <NavLink
+                        exact
+                        to='/'
+                        className='header_logo colXs1 colXsOffset1 colMdOffset0'
+                        activeClassName='header_logo-active'
+                        onClick={this.props.closeNav}
+                    >
+                        Generic Specific
+                    </NavLink>
+                    <menu className='header_links-cont colXs9 colMd11'>
                         <ul className='header_link-list'>
                             {this.props.links.map((link, index) => (
                                 <li key={index} className='header_list-item'>
@@ -54,7 +59,7 @@ class Header extends React.Component {
                                 </button>
                             </li>
                         </ul>
-                    </span>
+                    </menu>
                 </div>
             </header>
         )
