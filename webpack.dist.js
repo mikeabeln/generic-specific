@@ -9,7 +9,23 @@ module.exports = merge(common, {
         rules: [
             {
                 test: /\.(css|scss)$/,
-                use: ['style-loader', MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader', 'sass-loader']
+                use: [
+                    'style-loader',
+                    MiniCssExtractPlugin.loader,
+                    'css-loader',
+                    {
+                        loader: 'postcss-loader',
+                        options: {
+                            plugins: [
+                                require('autoprefixer'),
+                                require('postcss-hexrgba'),
+                                require('cssnano')({
+                                    preset: 'default'
+                                })
+                            ]
+                        }
+                    },
+                    'sass-loader']
             }
         ]
     },
