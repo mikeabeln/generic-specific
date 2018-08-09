@@ -2,7 +2,7 @@ import * as React from 'react'
 import { NavLink } from 'react-router-dom'
 import './Header.scss'
 import moreIcon from './more.svg'
-// import menuIcon from './menu.svg'
+import menuIcon from './menu.svg'
 
 class Header extends React.Component {
     constructor(props) {
@@ -52,7 +52,7 @@ class Header extends React.Component {
                                     className={'header_more-button'}
                                     onClick={this.props.toggleNav}
                                     aria-expanded={this.props.navOpen}
-                                    aria-haspopup={true }
+                                    aria-haspopup={ true }
                                     aria-label='More Navigation Links'
                                 >
                                     <img className='header_more-icon' src={moreIcon} />
@@ -60,6 +60,17 @@ class Header extends React.Component {
                             </li>
                         </ul>
                     </menu>
+                    <div className='header_menu-button-cont colXs1 colXsOffset8'>
+                        <button
+                            className={'header_menu-button'}
+                            onClick={this.props.toggleNav}
+                            aria-expanded={this.props.navOpen}
+                            aria-haspopup={ true }
+                            aria-label='More Navigation Links'
+                        >
+                            <img className='header_menu -icon' src={menuIcon} />
+                        </button>
+                    </div>
                 </div>
             </header>
         )
