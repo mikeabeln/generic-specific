@@ -156,11 +156,11 @@ a.header_products-link{
 
 a.header_about-link{
     &:hover {
-        border-bottom: 0.2rem solid black;
+        border-bottom: 0.2rem solid $yellow500;
     }
 
     &:focus {
-      border-bottom: 0.2rem solid black;
+      border-bottom: 0.2rem solid $yellow500;
     }
 }
 
