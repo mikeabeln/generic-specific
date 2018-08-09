@@ -6,9 +6,7 @@ const logger = require('morgan')
 const cookieParser = require('cookie-parser')
 const bodyParser = require('body-parser')
 
-const firebaseApp = firebase.initializeApp(functions.config().firebase)
-
-console.log(firebaseApp.options_.projectId)
+firebase.initializeApp()
 
 const api = express()
 const router = require('./routes/index')()
