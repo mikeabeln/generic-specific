@@ -15,7 +15,7 @@ const router = require('./routes/index')()
 api.use(helmet())
 
 api.use(function (req, res, next) {
-    res.setHeader('X-Powered-By', 'Not Your Api v6.6.6')
+    res.setHeader('X-Powered-By', 'Not Your App v6.6.6')
     next()
 })
 

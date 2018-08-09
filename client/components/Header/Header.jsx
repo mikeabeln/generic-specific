@@ -38,10 +38,9 @@ class Header extends React.Component {
                             {HeaderData.links.map((link, index) => (
                                 <li key={index} className='header_list-item'>
                                     <NavLink
-                                        exact={link.exact}
                                         to={link.link}
                                         onClick={this.props.closeNav}
-                                        className='header_link'
+                                        className={'header_link ' + link.classPrefix + '-link'}
                                         activeClassName='header_link-active'
                                     >
                                         {link.name}

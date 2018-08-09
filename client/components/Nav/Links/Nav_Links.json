@@ -2,7 +2,7 @@
   "sets": [
     {
       "title": "Ideas",
-      "class": "nav_ideas",
+      "classPrefix": "nav_ideas",
       "links": [
         {
           "name": "Project 1",
@@ -36,7 +36,7 @@
     },
     {
       "title": "Services",
-      "class": "nav_services",
+      "classPrefix": "nav_services",
       "links": [
         {
           "name": "Project 1",
@@ -70,7 +70,7 @@
     },
     {
       "title": "Products",
-      "class": "nav_products",
+      "classPrefix": "nav_products",
       "links": [
         {
           "name": "Project 1",

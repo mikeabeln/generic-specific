@@ -103,7 +103,7 @@ a.header_link {
     font-weight: 300;
     font-size: 1.2rem;
     line-height: 1.6rem;
-    padding: 0 0.4rem;
+    padding: 0.2rem 0.4rem;
     &:hover {
         font-weight: 700;
         text-decoration: none;
@@ -124,10 +124,51 @@ a.header_link {
     }
 }
 
+a.header_ideas-link{
+    &:hover {
+        border-bottom: 0.2rem solid $blue300;
+    }
+
+    &:focus {
+      border-bottom: 0.2rem solid $blue300;
+    }
+}
+
+a.header_services-link{
+    &:hover {
+        border-bottom: 0.2rem solid $red300;
+    }
+
+    &:focus {
+      border-bottom: 0.2rem solid $red300;
+    }
+}
+
+a.header_products-link{
+    &:hover {
+        border-bottom: 0.2rem solid $green300;
+    }
+
+    &:focus {
+      border-bottom: 0.2rem solid $green300;
+    }
+}
+
+a.header_about-link{
+    &:hover {
+        border-bottom: 0.2rem solid black;
+    }
+
+    &:focus {
+      border-bottom: 0.2rem solid black;
+    }
+}
+
 a.header_link-active {
     color: black;
     font-weight: 600;
-    border-bottom: 0.2rem solid #fec10d;
+    border-bottom: 0.2rem solid $yellow500;
+
     &:hover {
       font-weight: 700;
       text-decoration: none;
@@ -229,22 +270,24 @@ a.header_link-active {
     }
 
     a.header_logo {
-        &:focus{
-          padding-left: 1rem;
-        }
+        padding-left: 0.8rem;
 
+        &:focus{
+            padding-left: 0.6rem;
+        }
         &:focus:active{
-          padding-left: 1rem;
+            padding-left: 0.6rem;
         }
     }
 
     a.header_logo-active {
-        &:focus{
-          padding-left: 1rem;
-        }
+        padding-left: 0.8rem;
 
+        &:focus{
+            padding-left: 0.6rem;
+        }
         &:focus:active{
-          padding-left: 1rem;
+            padding-left: 0.6rem;
         }
     }
 }

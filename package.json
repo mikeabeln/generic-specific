@@ -17,7 +17,7 @@
         "lint": "eslint --ignore-path .gitignore client/**.jsx",
         "dev": "yarn lint && webpack-dev-server --progress --open --hot --config webpack.dev.js",
         "prebuild": "rimraf server/public && yarn lint",
-        "build": "webpack --config webpack.dist.js",
+        "build": "webpack --progress --config webpack.dist.js",
         "deploy": "cd server && firebase deploy && cd .."
     },
     "devDependencies": {
@@ -39,6 +39,7 @@
         "eslint-plugin-react": "^7.9.1",
         "extract-text-webpack-plugin": "^4.0.0-beta.0",
         "file-loader": "^1.1.11",
+        "firebase": "^5.3.1",
         "hoek": "^4.2.1",
         "html-webpack-plugin": "^3.2.0",
         "mini-css-extract-plugin": "^0.4.1",

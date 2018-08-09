@@ -3,22 +3,22 @@
     {
       "name": "Ideas",
       "link": "/ideas",
-      "exact": false
+      "classPrefix": "header_ideas"
     },
     {
       "name": "Services",
       "link": "/services",
-      "exact": false
+      "classPrefix": "header_services"
     },
     {
       "name": "Products",
       "link": "/products",
-      "exact": false
+      "classPrefix": "header_products"
     },
     {
       "name": "About",
       "link": "/about",
-      "exact": false
+      "classPrefix": "header_about"
     }
   ]
 }

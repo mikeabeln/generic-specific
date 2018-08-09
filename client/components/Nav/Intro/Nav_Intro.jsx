@@ -8,8 +8,12 @@ class Nav_Intro extends React.Component {
 
     render() {
         return (
-            <div className='colXs6 colXsOffset1 nav_intro-cont'>
-                Intro
+            <div className='nav_intro-cont colXs6 colXsOffset1'>
+                {this.props.user ?
+                    <button onClick={this.props.logout}>Log Out</button>
+                    :
+                    <button onClick={this.props.login}>Log In</button>
+                }
             </div>
         )
     }
