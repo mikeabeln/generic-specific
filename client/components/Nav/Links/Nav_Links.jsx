@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { NavLink } from 'react-router-dom'
 import './Nav_Links.scss'
-import NavLinksData from './Links.json'
+import NavLinksData from './Nav_Links.json'
 
 class Nav_Links extends React.Component {
     constructor(props) {

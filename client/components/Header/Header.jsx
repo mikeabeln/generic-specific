@@ -1,6 +1,7 @@
 import * as React from 'react'
 import { NavLink } from 'react-router-dom'
 import './Header.scss'
+import HeaderData from './Header.json'
 import moreIcon from './more.svg'
 import menuIcon from './menu.svg'
 
@@ -34,7 +35,7 @@ class Header extends React.Component {
                     </NavLink>
                     <menu className='header_links-cont colXs9 colMd11'>
                         <ul className='header_link-list'>
-                            {this.props.links.map((link, index) => (
+                            {HeaderData.links.map((link, index) => (
                                 <li key={index} className='header_list-item'>
                                     <NavLink
                                         exact={link.exact}

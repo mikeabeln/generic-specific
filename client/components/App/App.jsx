@@ -1,7 +1,6 @@
 import * as React from 'react'
 import './App.scss'
 
-import data from './../../data/mock.json'
 import Header from './../Header/Header.jsx'
 import Nav from './../Nav/Nav.jsx'
 import Footer from './../Footer/Footer.jsx'
@@ -11,7 +10,6 @@ class App extends React.Component {
         super(props)
         this.state = {
             path: window.location.pathname,
-            data: data,
             navOpen: false
         }
 
@@ -39,7 +37,7 @@ class App extends React.Component {
     render() {
         return (
             <div className='appContainer'>
-                <Header path={this.state.path} links={data.links} navOpen={this.state.navOpen} closeNav={this.closeNav} toggleNav={this.toggleNav}/>
+                <Header path={this.state.path} navOpen={this.state.navOpen} closeNav={this.closeNav} toggleNav={this.toggleNav}/>
                 <Nav open={this.state.navOpen} toggleNav={this.toggleNav}/>
                 <main className='main' path={this.state.path}>
                     {this.props.children}
