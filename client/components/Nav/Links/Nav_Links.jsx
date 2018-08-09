@@ -18,7 +18,7 @@ class Nav_Links extends React.Component {
             <menu role='Navigation Links' className='colXs3 colXsOffset1 nav_links-cont'>
                 {NavLinksData.sets.map((set, index) => (
                     <section key={index} title={set.title} className='nav_set-cont'>
-                        <h4 className='nav_set-title'>{set.title}</h4>
+                        <h4 className={'nav_set-title ' + set.class + '-title'}>{set.title}</h4>
                         <ul className='nav_set-list'>
                             {set.links.map((links, i) => (
                                 <li key={i} className='nav_set-list-item'>
@@ -26,8 +26,8 @@ class Nav_Links extends React.Component {
                                         exact={true}
                                         to={'/' + set.links[i].link}
                                         onClick={this.delayToggleNav}
-                                        className='nav_set-link'
-                                        activeClassName='nav_set-link-active'
+                                        className={'nav_set-link ' + set.class + '-link'}
+                                        activeClassName={'nav_set-link-active ' + set.class + '-link-active'}
                                     >
                                         {set.links[i].name}
                                     </NavLink>

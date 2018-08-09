@@ -10,15 +10,26 @@
   margin-top: 5.6rem;
 }
 
-.nav_set-title{
+.nav_set-title {
     font-family: 'Roboto Mono';
     font-size: 1.4rem;
     font-weight: 400;
     letter-spacing: 0.1rem;
-    color: white;
     margin: 0;
     padding-bottom: 0.4rem;
     border-bottom: 1px solid $gray700;
+}
+
+.nav_ideas-title {
+  color: $blue300;
+}
+
+.nav_services-title {
+  color: $red300;
+}
+
+.nav_products-title {
+  color: $green300;
 }
 
 .nav_set-list{
@@ -47,9 +58,7 @@ a.nav_set-link{
 
     &:hover{
       font-weight: 400;
-      color: $yellow500;
       text-decoration: none;
-      border-bottom: 1px solid $yellow500
     }
 
     &:focus{
@@ -61,16 +70,45 @@ a.nav_set-link{
 
     &:hover:focus{
       font-weight: 400;
-      color: $yellow500;
       text-decoration: none;
-      border-bottom: 1px solid $yellow500
     }
 }
 
+a.nav_ideas-link{
+  &:hover{
+    color: $blue200;
+    border-bottom: 1px solid $blue200;
+  }
+  &:hover:focus{
+    color: $blue200;
+    border-bottom: 1px solid $blue200;
+  }
+}
+
+a.nav_services-link{
+  &:hover{
+    color: $red200;
+    border-bottom: 1px solid $red200;
+  }
+  &:hover:focus{
+    color: $red200;
+    border-bottom: 1px solid $red200;
+  }
+}
+
+a.nav_products-link{
+  &:hover{
+    color: $green200;
+    border-bottom: 1px solid $green200;
+  }
+  &:hover:focus{
+    color: $green200;
+    border-bottom: 1px solid $green200;
+  }
+}
+
 a.nav_set-link-active{
-  color: $yellow500;
   font-weight: 400;
-  border-bottom: 1px solid $yellow500;
 
   &:hover{
       outline: none;
@@ -81,8 +119,36 @@ a.nav_set-link-active{
 
   &:hover:focus{
       outline: none;
-      color: $yellow500;
       font-weight: 400;
-      border-bottom: 1px solid $yellow500;
   }
+}
+
+a.nav_ideas-link-active{
+    color: $blue200;
+    border-bottom: 1px solid $blue200;
+
+    &:hover:focus{
+        color: $blue200;
+        border-bottom: 1px solid $blue200;
+    }
+}
+
+a.nav_services-link-active{
+    color: $red200;
+    border-bottom: 1px solid $red200;
+
+    &:hover:focus{
+        color: $red200;
+        border-bottom: 1px solid $red200;
+    }
+}
+
+a.nav_products-link-active{
+    color: $green200;
+    border-bottom: 1px solid $green200;
+
+    &:hover:focus{
+        color: $green200;
+        border-bottom: 1px solid $green200;
+    }
 }
