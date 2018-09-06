@@ -58,6 +58,8 @@ a.nav_set-link{
     color: $gray300;
 
     &:hover{
+      color: $yellow500;
+      border-bottom: 1px solid $yellow500;
       font-weight: 400;
       text-decoration: none;
     }
@@ -70,42 +72,11 @@ a.nav_set-link{
     }
 
     &:hover:focus{
+      color: $yellow500;
+      border-bottom: 1px solid $yellow500;
       font-weight: 400;
       text-decoration: none;
     }
-}
-
-a.nav_ideas-link{
-  &:hover{
-    color: $blue200;
-    border-bottom: 1px solid $blue200;
-  }
-  &:hover:focus{
-    color: $blue200;
-    border-bottom: 1px solid $blue200;
-  }
-}
-
-a.nav_services-link{
-  &:hover{
-    color: $red200;
-    border-bottom: 1px solid $red200;
-  }
-  &:hover:focus{
-    color: $red200;
-    border-bottom: 1px solid $red200;
-  }
-}
-
-a.nav_products-link{
-  &:hover{
-    color: $green200;
-    border-bottom: 1px solid $green200;
-  }
-  &:hover:focus{
-    color: $green200;
-    border-bottom: 1px solid $green200;
-  }
 }
 
 a.nav_set-link-active{
